@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ClusterMaster</string>
+    <string name="forward">Forward</string>
+    <string name="login">Login</string>
+    <string name="nic_welcome">NIC Welcome</string>
+    <string name="username">Username</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="password">Password</string>
+    <string name="developed_by_nic_bilaspur_c_g">Developed by NIC Bilaspur(C.G.)</string>
+</resources>
