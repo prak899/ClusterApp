@@ -73,7 +73,7 @@ public class CovidEntry extends AppCompatActivity implements levels{
 
         getData("8847845697", "Pending");
 
-        if (!Address.isEmpty() || !Type.isEmpty() || !Description.isEmpty() || !Location.isEmpty() || !createdAt.isEmpty() || !Status.isEmpty() || !Image.equals("")) {
+/*        if (!Address.isEmpty() || !Type.isEmpty() || !Description.isEmpty() || !Location.isEmpty() || !createdAt.isEmpty() || !Status.isEmpty() || !Image.equals("")) {
             Intent intent = getIntent();
             Address = intent.getStringExtra("address");
             Type = intent.getStringExtra("type");
@@ -82,7 +82,7 @@ public class CovidEntry extends AppCompatActivity implements levels{
             createdAt = intent.getStringExtra("createdAt");
             Status = intent.getStringExtra("status");
             Image = intent.getStringExtra("image");
-        }else Toast.makeText(this, "Kindly login with admin", Toast.LENGTH_SHORT).show();
+        }else Toast.makeText(this, "Kindly login with admin", Toast.LENGTH_SHORT).show();*/
     }
 
     private void init() {

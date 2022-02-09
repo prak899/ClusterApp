@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/PM on BedRest/ClusterAdmin/Version1/app/src/main/res/drawable/round_tv_assigned.xml" value="0.1545" />
+        <entry key="..\:/PM on BedRest/ClusterAdmin/Version1/app/src/main/res/drawable/round_tv_completed.xml" value="0.1545" />
+        <entry key="..\:/PM on BedRest/ClusterAdmin/Version1/app/src/main/res/layout/activity_covid_entry.xml" value="0.1" />
+        <entry key="..\:/PM on BedRest/ClusterAdmin/Version1/app/src/main/res/layout/activity_forward.xml" value="0.22" />
+        <entry key="..\:/PM on BedRest/ClusterAdmin/Version1/app/src/main/res/layout/activity_login_screen.xml" value="0.1" />
+        <entry key="..\:/PM on BedRest/ClusterAdmin/Version1/app/src/main/res/layout/activity_resolve_screen.xml" value="0.21354166666666666" />
+        <entry key="..\:/PM on BedRest/ClusterAdmin/Version1/app/src/main/res/layout/activity_solve_screen.xml" value="0.11197916666666667" />
+        <entry key="..\:/PM on BedRest/ClusterAdmin/Version1/app/src/main/res/layout/layout_custom_dialog.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_background.xml" value="0.3312820512820513" />
         <entry key="app/src/main/res/drawable/buttonshapewhitebg.xml" value="0.19010416666666666" />
         <entry key="app/src/main/res/drawable/ic_back_background.xml" value="0.18177083333333333" />
@@ -23,7 +31,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

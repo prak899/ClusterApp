@@ -53,7 +53,7 @@ public class AccidentAdapter extends RecyclerView.Adapter<AccidentAdapter.ViewHo
         Glide.with(context).load(status.getPhoto()).into(holder.nicPhoto);
 
         holder.itemView.setOnClickListener(v-> {
-            /*Intent intent= new Intent(context, ResolveScreen.class);
+            Intent intent= new Intent(context, ResolveScreen.class);
             intent.putExtra("address", status.getAddress());
             intent.putExtra("type", status.getType());
             intent.putExtra("description", status.getDescription());
@@ -63,8 +63,8 @@ public class AccidentAdapter extends RecyclerView.Adapter<AccidentAdapter.ViewHo
 
             intent.putExtra("image", status.getPhoto());
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            context.startActivity(intent);*/
-            ((CovidEntry)context).adminForwardAccident();
+            context.startActivity(intent);
+            //((CovidEntry)context).adminForwardAccident();
         });
     }
 

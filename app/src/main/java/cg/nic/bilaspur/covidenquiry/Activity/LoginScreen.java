@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import cg.nic.bilaspur.covidenquiry.Admin.ForwardActivity;
 import cg.nic.bilaspur.covidenquiry.Class.PM;
 import cg.nic.bilaspur.covidenquiry.R;
 
@@ -19,11 +21,15 @@ public class LoginScreen extends AppCompatActivity{
 
     }
     public void signIn(View v){
-        startActivity(new Intent(this, CovidEntry.class));
+        startActivity(new Intent(this, ForwardActivity.class));
         /*if (pm.checkInfo().equals("nameismajhi"))
             pm.startSound();
         else
             Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();*/
+    }
+    public void signIn1(View v){
+        startActivity(new Intent(this, CovidEntry.class));
+
     }
     public void init(){
         pm = new PM();
