@@ -115,6 +115,9 @@ public class CovidEntry extends AppCompatActivity implements levels{
         //progressBar.setVisibility(View.VISIBLE);
         lottieAnimationView.setVisibility(View.VISIBLE);
 
+        /*String district_name = "BILASPUR", assign_officer = "bilaspur0001";
+        String url = "https://cg.nic.in/bilaspur/animals/api/assignedcase.php?district="+district_name+"&assigofficer="+assign_officer+"&usertype=officer";
+        Log.d("XurlX", "getData: "+url);*/
         String url = "https://cg.nic.in/bilaspur/animals/api/statusType.php?mobile_no="+number+"&status_type="+Status_type;
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(url, new Response.Listener<JSONArray>() {
 
