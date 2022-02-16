@@ -97,12 +97,12 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
 
     private void login(){
         //Getting values from edit texts
-        final String userName = editTextUser.getText().toString().trim();
-        final String password = md5(editTextPassword.getText().toString().trim());
+        final String userName ="bilaspur_controller1"; //editTextUser.getText().toString().trim();
+        final String password = "314231c56ffa234f6c8ac6d661e3784a";//md5(editTextPassword.getText().toString().trim());
 
         //md5(editTextPassword.getText().toString().trim());
         Log.d("Xmd5X", "login: "+password);
-        String url = "https://cg.nic.in/bilaspur/animals/api/officerlogin.php?officerid="+userName+"&officer_pass="+"C473D8FE60227ECF9EDE3D8FE96E9DAF";
+        String url = "https://cg.nic.in/bilaspur/animals/api/officerlogin.php?officerid="+userName+"&officer_pass="+password;
         //Creating a string request
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
                 new Response.Listener<String>() {
@@ -118,6 +118,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
 
                             JSONObject c = jsonarray.getJSONObject(0);
                             String status= c.getString("status");
+                            Log.d("XsucX", "onResponse: "+status);
 
                             if(status.equalsIgnoreCase("success")){
 
@@ -129,7 +130,8 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
 
                                 editor.commit();
                                 String PrivilegeLevel= c.getString("privilege_level");
-                                if (PrivilegeLevel.equalsIgnoreCase("1")) {
+                                Log.d("xPrveX", "onResponse: "+PrivilegeLevel);
+                                if (PrivilegeLevel.equalsIgnoreCase("controller")) {
                                     //Starting profile activity
                                     Intent intent = new Intent(LoginScreen.this, CovidEntry.class);
                                     startActivity(intent);
@@ -174,7 +176,7 @@ public class LoginScreen extends AppCompatActivity implements View.OnClickListen
     @Override
     public void onClick(View v) {
         //Calling the login function
-        //login();
+        login();
     }
     public static String md5(final String s) {
         final String MD5 = "MD5";

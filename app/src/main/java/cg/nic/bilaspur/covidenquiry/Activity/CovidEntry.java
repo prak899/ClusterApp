@@ -125,6 +125,8 @@ public class CovidEntry extends AppCompatActivity implements levels{
             @Override
             public void onResponse(JSONArray response) {
                 accidentList.clear();
+
+
                 for (int i = 0; i < response.length(); i++) {
 
                     try {

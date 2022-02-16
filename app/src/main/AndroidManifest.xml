@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CovidEnquiry">
         <activity
-            android:name=".Admin.ForwardActivity"
+            android:name=".SplashScreen"
             android:exported="false" />
         <activity
             android:name=".Activity.SolveScreen"
@@ -28,7 +28,7 @@
             android:name=".Activity.LoginScreen"
             android:exported="true" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".Admin.ForwardActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
